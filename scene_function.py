@@ -8,8 +8,9 @@ def scenes_responses(game):
         1,
         "Tu búsqueda del dragón te lleva hacia una montaña, morada de la criatura según los rumores. La puedes ver a lo lejos, pero antes debes atravesar el bosque que rodea la cumbre. Tendrás que atravesarlo. Quizás puedas encontrar algo útil por este sendero para tu enfrentamiento. ¿Qué haces",
         "bosque_entrada"
+    )
     
-    #Respuesta 1    
+    #Respuesta "explora el bosque"    
     game.add_response(
       1,
       "explorar el bosque",
@@ -202,7 +203,7 @@ def scenes_responses(game):
       None
     )
         
-    #Respuesta 2
+    #Respuesta "buscar en el lago"
     
     game.add_response(
       1,
@@ -396,7 +397,7 @@ def scenes_responses(game):
       None
     )
     
-    #Respuesta 3
+    #Respuesta buscar una salida
         
     game.add_response(
       1,
