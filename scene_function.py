@@ -397,7 +397,7 @@ def scenes_responses(game):
       None
     )
     
-    #Respuesta buscar una salida
+    #Respuesta "buscar una salida"
 
     game.add_response(
       1,
