@@ -3,7 +3,8 @@
 def scenes_responses(game):
     
     
-    #Escena 1
+    ################  Escena 1  ##########
+    
     game.add_scene(
         1,
         "Tu búsqueda del dragón te lleva hacia una montaña, morada de la criatura según los rumores. La puedes ver a lo lejos, pero antes debes atravesar el bosque que rodea la cumbre. Tendrás que atravesarlo. Quizás puedas encontrar algo útil por este sendero para tu enfrentamiento. ¿Qué haces?",
@@ -397,7 +398,7 @@ def scenes_responses(game):
       None
     )
     
-    #Respuesta buscar una salida
+    #Respuesta "buscar una salida"
 
     game.add_response(
       1,
@@ -589,4 +590,160 @@ def scenes_responses(game):
       "Tu instinto de supervivencia te guía hacia una ruta segura de ascenso. Cada paso te acerca más a tu inevitable encuentro con el dragón en la cima",
       "humana",
       None
+    )
+    
+    
+    ################  Escena 2  ##########
+    
+    
+    game.add_scene(
+        2,
+        "Tras ascender por el sendero, llegas a la cima de la montaña. Ante ti se alza una inmensa cueva, y el suelo está cubierto de huesos calcinados. Un rugido estremecedor resuena desde el interior, y una enorme figura emerge entre las sombras. El dragón, con escamas como acero negro y ojos de fuego, se alza ante ti. ¿Qué haces?",
+        "encuentro_dragon"
+    )
+    
+    #Respuesta "Ataca al dragón"
+    
+    game.add_response(
+        2,
+        "Atacar. Luchar. Enfrentar al dragón",
+        "Te lanzas al combate con determinación. El dragón responde con un rugido ensordecedor y una llamarada que apenas esquivas",
+        "humano",
+        "guerrero"
+    )
+    
+    game.add_response(
+      2,
+      "Atacar. Luchar. Enfrentar al dragón",
+      "Te lanzas al combate con fiereza. El dragón responde con un rugido ensordecedor y una llamarada que esquivas con ágil determinación. Pronto te das cuenta de que necesitarás más que fuerza bruta para derrotar a esta antigua criatura.",
+      "humana",
+      "guerrera"
+)
+
+    game.add_response(
+      2,
+      "Atacar. Luchar. Enfrentar al dragón",
+      "Te posicionas con firmeza y preparas tu magia de combate. El dragón responde con un rugido ensordecedor y una llamarada que desvías con un rápido escudo arcano. Comprendes que la magia convencional no será suficiente contra este poderoso ser.",
+      "humano",
+      "hechicero"
+    )
+
+    game.add_response(
+      2,
+      "Atacar. Luchar. Enfrentar al dragón",
+      "Canalizas tu poder mágico con determinación. El dragón responde con un rugido ensordecedor y una llamarada que dispersas con un elegante gesto arcano. Sin embargo, intuyes que necesitarás descubrir alguna debilidad específica para vencer a esta bestia.",
+      "humana",
+      "hechicera"
+    )
+
+    game.add_response(
+      2,
+      "Atacar. Luchar. Enfrentar al dragón",
+      "Te mueves con agilidad calculada hacia el combate. El dragón responde con un rugido ensordecedor y una llamarada que evades con una acrobática pirueta. Te das cuenta de que necesitarás más que sigilo y destreza para superar este desafío.",
+      "humano",
+      "pícaro"
+    )
+
+    game.add_response(
+      2,
+      "Atacar. Luchar. Enfrentar al dragón",
+      "Te deslizas hacia el combate con gracia letal. El dragón responde con un rugido ensordecedor y una llamarada que esquivas con un ágil movimiento. Percibes que deberás encontrar una estrategia más elaborada para derrotar a este antiguo ser.",
+      "humana",
+      "pícara"
+    )
+
+    game.add_response(
+      2,
+      "Atacar. Luchar. Enfrentar al dragón",
+      "Te lanzas al combate con milenaria precisión élfica. El dragón responde con un rugido ensordecedor y una llamarada que evitas con gracia ancestral. Tu experiencia te dice que necesitarás más que habilidad marcial para vencer a esta criatura.",
+      "elfo",
+      "guerrero"
+    )
+
+    game.add_response(
+      2,
+      "Atacar. Luchar. Enfrentar al dragón",
+      "Te aproximas al combate con elegancia letal. El dragón responde con un rugido ensordecedor y una llamarada que eludes con movimientos fluidos. Tu sabiduría élfica te advierte que deberás buscar una manera alternativa de derrotar al dragón.",
+      "elfa",
+      "guerrera"
+    )
+
+    game.add_response(
+      2,
+      "Atacar. Luchar. Enfrentar al dragón",
+      "Invocas tu antigua magia élfica con precisión. El dragón responde con un rugido ensordecedor y una llamarada que neutralizas con un encantamiento ancestral. Comprendes que ni siquiera la magia más antigua será suficiente por sí sola.",
+      "elfo",
+      "hechicero"
+    )
+
+    game.add_response(
+      2,
+      "Atacar. Luchar. Enfrentar al dragón",
+      "Tejes tu magia élfica con gracia milenaria. El dragón responde con un rugido ensordecedor y una llamarada que disipas con un antiguo conjuro. Tu intuición mágica te indica que deberás buscar otro camino para la victoria.",
+      "elfa",
+      "hechicera"
+    )
+
+    game.add_response(
+      2,
+      "Atacar. Luchar. Enfrentar al dragón",
+      "Te deslizas hacia el combate con siglos de experiencia en sigilo. El dragón responde con un rugido ensordecedor y una llamarada que evitas con movimientos élficos. Reconoces que necesitarás más que astucia para superar este desafío.",
+      "elfo",
+      "pícaro"
+    )
+
+    game.add_response(
+      2,
+      "Atacar. Luchar. Enfrentar al dragón",
+      "Te aproximas sigilosamente con destreza élfica. El dragón responde con un rugido ensordecedor y una llamarada que esquivas con gracia sobrenatural. Tu instinto te dice que deberás encontrar una estrategia más ingeniosa.",
+      "elfa",
+      "pícara"
+    )
+
+    game.add_response(
+      2,
+      "Atacar. Luchar. Enfrentar al dragón",
+      "Te plantas firme como la montaña y cargas al combate. El dragón responde con un rugido ensordecedor y una llamarada que resistes con tenacidad enana. Tu experiencia guerrera te indica que necesitarás más que fuerza bruta para esta batalla.",
+      "enano",
+      "guerrero"
+    )
+
+    game.add_response(
+      2,
+      "Atacar. Luchar. Enfrentar al dragón",
+      "Avanzas con la fuerza de las profundidades. El dragón responde con un rugido ensordecedor y una llamarada que enfrentas con resistencia ancestral. Tu instinto de batalla te advierte que deberás buscar otra forma de derrotar a esta bestia.",
+      "enana",
+      "guerrera"
+    )
+
+    game.add_response(
+      2,
+      "Atacar. Luchar. Enfrentar al dragón",
+      "Invocas la magia de las piedras antiguas. El dragón responde con un rugido ensordecedor y una llamarada que bloqueas con runas enanas. Comprendes que ni la más poderosa magia rúnica será suficiente por sí sola.",
+      "enano",
+      "hechicero"
+    )
+
+    game.add_response(
+      2,
+      "Atacar. Luchar. Enfrentar al dragón",
+      "Canalizas el poder de las profundidades. El dragón responde con un rugido ensordecedor y una llamarada que detienes con magia rúnica. Tu conocimiento ancestral te susurra que deberás encontrar otro método para vencer.",
+      "enana",
+      "hechicera"
+    )
+
+    game.add_response(
+      2,
+      "Atacar. Luchar. Enfrentar al dragón",
+      "Te mueves con la astucia forjada en las minas. El dragón responde con un rugido ensordecedor y una llamarada que evitas con precisión enana. Tu experiencia te dice que necesitarás más que agilidad para superar esta prueba.",
+      "enano",
+      "pícaro"
+    )
+
+    game.add_response(
+      2,
+      "Atacar. Luchar. Enfrentar al dragón",
+      "Avanzas con la cautela aprendida en las cavernas. El dragón responde con un rugido ensordecedor y una llamarada que esquivas con astucia subterránea. Sabes que deberás idear una estrategia más elaborada para esta batalla.",
+      "enana",
+      "pícara"
     )
