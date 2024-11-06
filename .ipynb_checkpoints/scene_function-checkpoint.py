@@ -23,7 +23,7 @@ def scenes_responses(game):
     game.add_response(
       1,
       "Explorar el bosque. Buscar suministros. Encontrar algo de valor",
-      "Tu ojo entrenado para la batalla detecta un lago donde algo brilla en el fondo. Parece una pieza de armadura antigua",
+      "Tu ojo entrenado para la batalla detecta un lago donde algo brilla en el fondo. Parece algo valioso y antiguo. ¿Qué será",
       "humana",
       "guerrera"
     )
@@ -47,7 +47,7 @@ def scenes_responses(game):
     game.add_response(
       1,
       "Explorar el bosque. Buscar suministros. Encontrar algo de valor",
-      "Tu vista aguda distingue un lago de aguas claras donde reposa algo que emite destellos como de una antigua espada élfica",
+      "Tu vista aguda distingue un lago de aguas claras donde reposa algo que emite destellos, parece ser un objeto de manufactura élfica",
       "elfo",
       "guerrero"
     )
@@ -241,7 +241,7 @@ def scenes_responses(game):
     game.add_response(
       1,
       "Buscar en el lago. Nadar en el lago. Recoger el objeto",
-      "Con movimientos fluidos, recuperas una esfera brillante del fondo del lago. Tu sangre élfica reconoce el orbe arcano al instante. Sus energías, letales para los dragones, fluirán a través de ti en el combate final",
+      "Con movimientos fluidos, recuperas un orbe brillante del fondo del lago. Tu sangre élfica reconoce el orbe arcano al instante. Sus energías, letales para los dragones, fluirán a través de ti en el combate final",
       "elfo",
       "guerrero"
     )
@@ -249,7 +249,7 @@ def scenes_responses(game):
     game.add_response(
       1,
       "Buscar en el lago. Nadar en el lago. Recoger el objeto",
-      "Las aguas parecen apartarse ante ti mientras extraes un artefacto luminoso. Tu intuición élfica confirma su identidad: el orbe arcano cazadragones. Su poder ancestral te ayudará a enfrentar a la bestia en igualdad de condiciones",
+      "Las aguas parecen apartarse ante ti mientras extraes un orbe luminoso. Tu intuición élfica confirma su identidad: el orbe arcano cazadragones. Su poder ancestral te ayudará a enfrentar a la bestia en igualdad de condiciones",
       "elfa",
       "guerrera"
     )
@@ -411,7 +411,7 @@ def scenes_responses(game):
     game.add_response(
       1,
       "Buscar una salida. Encontrar una salida. Salir a la montaña. Dejar el bosque. Ir hacia el dragón.",
-      "Tu entrenamiento militar te permite identificar un camino estratégico entre los árboles. La ruta se eleva hacia la cima de la montaña, donde te espera tu enemigo alado",
+      "Tu entrenamiento militar te permite identificar un camino estratégico entre los árboles. La ruta se eleva hacia la cima de la montaña, donde te espera tu enemigo el dragón alado",
       "humana",
       "guerrera"
     )
@@ -419,7 +419,7 @@ def scenes_responses(game):
     game.add_response(
       1,
       "Buscar una salida. Encontrar una salida. Salir a la montaña. Dejar el bosque. Ir hacia el dragón.",
-      "Tus ojos expertos en terreno montañoso descubren un sendero tallado en la roca. El camino serpentea hacia la cima donde se oculta tu objetivo escamado",
+      "Tus ojos expertos en terreno montañoso descubren un sendero tallado en la roca. El camino serpentea hacia la cima donde se oculta el malévolo dragón",
       "enano",
       "guerrero"
     )
@@ -435,7 +435,7 @@ def scenes_responses(game):
     game.add_response(
       1,
       "Buscar una salida. Encontrar una salida. Salir a la montaña. Dejar el bosque. Ir hacia el dragón.",
-      "Con agilidad élfica, descubres un sendero natural entre los árboles que se eleva hacia la montaña. El camino te guiará hasta la guarida de tu enemigo en las alturas",
+      "Con agilidad élfica, descubres un sendero natural entre los árboles que se eleva hacia la montaña. El camino te guiará hasta la guarida del dragón ubicado en la cima",
       "elfo",
       "guerrero"
     )
@@ -459,7 +459,7 @@ def scenes_responses(game):
     game.add_response(
       1,
       "Buscar una salida. Encontrar una salida. Salir a la montaña. Dejar el bosque. Ir hacia el dragón.",
-      "Tu percepción arcana te guía hacia un camino místico que asciende por la montaña. La senda te llevará hasta el territorio de tu adversario draconiano",
+      "Tu percepción arcana te guía hacia un camino místico que asciende por la montaña. La senda te llevará hasta el territorio de tu adversario el dragón",
       "humana",
       "hechicera"
     )
@@ -746,4 +746,312 @@ def scenes_responses(game):
       "Avanzas con la cautela aprendida en las cavernas. El dragón responde con un rugido ensordecedor y una llamarada que esquivas con astucia subterránea. Sabes que deberás idear una estrategia más elaborada para esta batalla.",
       "enana",
       "pícara"
+    )
+    
+    #Usar el orbe
+    
+    game.add_response(
+      2,
+      "Usar el orbe. Utilizar el objeto mágico",
+      "Empuñas el orbe con determinación guerrera. Su poder fluye a través de tu espada, transformándola en una hoja de luz cegadora. Aprovechando tu entrenamiento marcial, ejecutas una serie de ataques precisos que, amplificados por la magia del orbe, atraviesan las escamas del dragón, sometiéndolo finalmente.",
+      "humano",
+      "guerrero"
+    )
+
+    game.add_response(
+      2,
+      "Usar el orbe. Utilizar el objeto mágico",
+      "Alzas el orbe mientras adoptas una postura de combate. Su energía mágica envuelve tu armadura y arma, dotándote de un poder ancestral. Con maestría marcial, canalizas la magia a través de cada golpe, hasta que el dragón sucumbe ante la combinación de tu fuerza y el poder del orbe.",
+      "humana",
+      "guerrera"
+    )
+    
+    game.add_response(
+      2,
+      "Usar el orbe. Utilizar el objeto mágico",
+      "Sincronizas tu poder arcano con el orbe, creando una resonancia mágica perfecta. Tus hechizos, amplificados por el artefacto, se transforman en una tormenta de energía pura que sobrepasa las defensas mágicas del dragón, sometiéndolo con el poder combinado.",
+      "humano",
+      "hechicero"
+    )
+
+    game.add_response(
+      2,
+      "Usar el orbe. Utilizar el objeto mágico",
+      "Fusionas tu magia con la energía del orbe, creando una sinergia arcana devastadora. Tus conjuros, potenciados por el antiguo artefacto, penetran las resistencias mágicas del dragón, hasta que la bestia se rinde ante el poder arcano combinado.",
+      "humana",
+      "hechicera"
+    )
+    
+    game.add_response(
+      2,
+      "Usar el orbe. Utilizar el objeto mágico",
+      "Manipulas el orbe con destreza de ladrón, encontrando sus puntos de poder ocultos. Combinas tu sigilo con la magia del artefacto, creando ilusiones que confunden al dragón mientras atacas sus puntos débiles, logrando una victoria mediante astucia y poder místico.",
+      "humano",
+      "pícaro"
+    )
+
+    game.add_response(
+      2,
+      "Usar el orbe. Utilizar el objeto mágico",
+      "Utilizas el orbe con la precisión de una experta en artimañas. Su poder realza tus movimientos sigilosos, permitiéndote crear duplicados mágicos que desorientan al dragón mientras aprovechas cada oportunidad para golpear sus puntos vitales.",
+      "humana",
+      "pícara"
+    )
+    
+    game.add_response(
+      2,
+      "Usar el orbe. Utilizar el objeto mágico",
+      "Combinas la gracia élfica con el poder del orbe, creando una danza de luz y acero. Tu milenaria experiencia en combate se fusiona con la magia antigua, permitiéndote ejecutar una serie de ataques perfectos que superan las defensas del dragón.",
+      "elfo",
+      "guerrero"
+    )
+
+    game.add_response(
+      2,
+      "Usar el orbe. Utilizar el objeto mágico",
+      "Enlazas tu esencia élfica con el orbe, creando una armonía perfecta entre guerrera y artefacto. Tu elegancia en batalla se amplifica con el poder místico, permitiéndote realizar una secuencia de ataques mortales que doblegan al dragón.",
+      "elfa",
+      "guerrera"
+    )
+    
+    game.add_response(
+      2,
+      "Usar el orbe. Utilizar el objeto mágico",
+      "Tejes tu antigua magia élfica a través del orbe, creando un vínculo con poderes primordiales. La combinación de tu sabiduría arcana y el artefacto genera una cascada de energía que sobrepasa incluso la resistencia mágica del dragón.",
+      "elfo",
+      "hechicero"
+    )
+
+    game.add_response(
+      2,
+      "Usar el orbe. Utilizar el objeto mágico",
+      "Entrelazas los antiguos cantos élficos con el poder del orbe, desatando una sinfonía de magia pura. Tu dominio arcano, amplificado por el artefacto, crea un torrente de energía que subyuga la voluntad del dragón.",
+      "elfa",
+      "hechicera"
+    )
+    
+    game.add_response(
+      2,
+      "Usar el orbe. Utilizar el objeto mágico",
+      "Utilizas el orbe con la sutileza de siglos de sigilo élfico. Su poder realza tus movimientos hasta hacerte prácticamente invisible, permitiéndote burlar las defensas del dragón y asestar golpes precisos en sus puntos vitales.",
+      "elfo",
+      "pícaro"
+    )
+
+    game.add_response(
+      2,
+      "Usar el orbe. Utilizar el objeto mágico",
+      "Canalizas el poder del orbe a través de tu agilidad élfica natural. La magia amplifica tu capacidad de ocultación, permitiéndote moverte como una sombra alrededor del dragón y atacar sus debilidades con precisión letal.",
+      "elfa",
+      "pícara"
+    )
+    
+    game.add_response(
+      2,
+      "Usar el orbe. Utilizar el objeto mágico",
+      "Empuñas el orbe con la fuerza de las montañas. Su poder fluye a través de tu hacha, impregnándola con la magia de los antiguos reyes enanos. Cada golpe resonante combina tu poder guerrero con la energía mística, hasta someter al dragón.",
+      "enano",
+      "guerrero"
+    )
+
+    game.add_response(
+      2,
+      "Usar el orbe. Utilizar el objeto mágico",
+      "Alzas el orbe con el poder de tus ancestros. Su energía se funde con tu resistencia enana, potenciando cada golpe con la fuerza de las profundidades. La combinación de tu fiereza y la magia antigua resulta demasiado para el dragón.",
+      "enana",
+      "guerrera"
+    )
+    
+    game.add_response(
+      2,
+      "Usar el orbe. Utilizar el objeto mágico",
+      "Combinas el poder del orbe con tus runas ancestrales, creando una resonancia mágica que hace temblar la montaña. Tu conocimiento de la magia enana, amplificado por el artefacto, somete al dragón con el poder de la tierra misma.",
+      "enano",
+      "hechicero"
+    )
+
+    game.add_response(
+      2,
+      "Usar el orbe. Utilizar el objeto mágico",
+      "Fusionas las runas antiguas con el poder del orbe, desatando la magia primordial de la montaña. La combinación de tu sabiduría rúnica y el artefacto crea un poder que ni siquiera el dragón puede resistir.",
+      "enana",
+      "hechicera"
+    )
+    
+    game.add_response(
+      2,
+      "Usar el orbe. Utilizar el objeto mágico",
+      "Manipulas el orbe con la precisión aprendida en las profundidades. Su poder realza tu capacidad de moverte sin ser detectado, permitiéndote encontrar y explotar las debilidades del dragón con la astucia de las sombras subterráneas.",
+      "enano",
+      "pícaro"
+    )
+
+    game.add_response(
+      2,
+      "Usar el orbe. Utilizar el objeto mágico",
+      "Utilizas el orbe con la habilidad forjada en las minas. La magia potencia tu sigilo natural, permitiéndote moverte entre las sombras de la caverna y atacar los puntos débiles del dragón con precisión mortal.",
+      "enana",
+      "pícara"
+    )
+    
+    # Huir o esconderse del dragón
+    
+    game.add_response(
+      2,
+      "Huir. Esconderme del dragón. Salir corriendo",
+      "El miedo supera tu entrenamiento guerrero y das media vuelta para huir. El dragón, percibiendo tu momento de debilidad, despliega sus alas y se abalanza sobre ti. Tu armadura resulta inútil contra sus fauces, que acaban con tu vida en un instante. La cobardía selló tu destino. Con tu muerte, el destino del reino está sellado.",
+      "humano",
+      "guerrero"
+    )
+
+    game.add_response(
+      2,
+      "Huir. Esconderme del dragón. Salir corriendo",
+      "El terror nubla tu juicio de guerrera y emprendes la huida. El dragón, con un batir de alas, te alcanza en segundos. Tu entrenamiento marcial no sirve de nada cuando sus garras te atrapan, sellando tu final con fuego y muerte. Con tu muerte, el destino del reino está sellado.",
+      "humana",
+      "guerrera"
+    )
+
+    game.add_response(
+      2,
+      "Huir. Esconderme del dragón. Salir corriendo",
+      "El pánico dispersa tu concentración mágica y huyes despavorido. El dragón, inmune a tus débiles hechizos defensivos, te persigue con facilidad. Tus últimos momentos son un torbellino de fuego y dolor mientras la bestia devora al hechicero que osó darle la espalda. Con tu muerte, el destino del reino está sellado.",
+      "humano",
+      "hechicero"
+    )
+
+    game.add_response(
+      2,
+      "Huir. Esconderme del dragón. Salir corriendo",
+      "El miedo disipa tu poder arcano y te das a la fuga. El dragón, burlándose de tus patéticos intentos de protección mágica, te da caza sin esfuerzo. Tus conocimientos arcanos resultan inútiles cuando sus llamas consumen tu cuerpo y alma. Con tu muerte, el destino del reino está sellado.",
+      "humana",
+      "hechicera"
+    )
+
+    game.add_response(
+      2,
+      "Huir. Esconderme del dragón. Salir corriendo",
+      "Tu instinto de supervivencia te traiciona y buscas escapar entre las sombras. El dragón, con sentidos muy superiores a tu sigilo, te localiza al instante. Tu agilidad resulta inútil cuando sus garras te alcanzan, terminando con tu vida en un destello de agonía. Con tu muerte, el destino del reino está sellado.",
+      "humano",
+      "pícaro"
+    )
+
+    game.add_response(
+      2,
+      "Huir. Esconderme del dragón. Salir corriendo",
+      "El terror te impulsa a buscar una vía de escape en las sombras. El dragón, cuya vista penetra tu ocultamiento, te caza como a una presa indefensa. Tus habilidades de sigilo no significan nada cuando sus fauces cierran tu destino. Con tu muerte, el destino del reino está sellado.",
+      "humana",
+      "pícara"
+    )
+
+    game.add_response(
+      2,
+      "Huir. Esconderme del dragón. Salir corriendo",
+      "Siglos de entrenamiento se desvanecen ante el pánico y huyes velozmente. El dragón, despreciando tu cobardía élfica, te persigue con facilidad. Tu gracia ancestral no te salva cuando sus llamas consumen tu carne y honor por igual. Con tu muerte, el destino del reino está sellado.",
+      "elfo",
+      "guerrero"
+    )
+
+    game.add_response(
+      2,
+      "Huir. Esconderme del dragón. Salir corriendo",
+      "El miedo sobrepasa tu disciplina milenaria y emprendes la retirada. El dragón, burlándose de tu elegante huida, te alcanza sin esfuerzo. Tu destreza élfica resulta inútil cuando sus garras arrancan la vida de tu cuerpo. Con tu muerte, el destino del reino está sellado.",
+      "elfa",
+      "guerrera"
+    )
+
+    game.add_response(
+      2,
+      "Huir. Esconderme del dragón. Salir corriendo",
+      "El terror dispersa tu antigua magia y abandonas la batalla. El dragón, inmune a tus débiles encantamientos defensivos, te persigue implacablemente. Tu sabiduría arcana se desvanece cuando sus llamas consumen tu forma mortal. Con tu muerte, el destino del reino está sellado.",
+      "elfo",
+      "hechicero"
+    )
+
+    game.add_response(
+      2,
+      "Huir. Esconderme del dragón. Salir corriendo",
+      "El pánico rompe tu conexión con la magia ancestral y huyes aterrorizada. El dragón, despreciando tus patéticos intentos de protección, te da alcance en segundos. Tu poder élfico se extingue junto con tu vida entre sus fauces. Con tu muerte, el destino del reino está sellado.",
+      "elfa",
+      "hechicera"
+    )
+
+    game.add_response(
+      2,
+      "Huir. Esconderme del dragón. Salir corriendo",
+      "Traicionas siglos de entrenamiento sigiloso al huir en pánico. El dragón, cuyos sentidos superan incluso tu sigilo élfico, te localiza al instante. Tu legendaria agilidad no significa nada cuando sus garras encuentran tu carne. Con tu muerte, el destino del reino está sellado.",
+      "elfo",
+      "pícaro"
+    )
+
+    game.add_response(
+      2,
+      "Huir. Esconderme del dragón. Salir corriendo",
+      "El miedo supera tu entrenamiento milenario y buscas escape en las sombras. El dragón, cuya antigua vista penetra tus técnicas de ocultamiento, te caza sin piedad. Tu gracia élfica termina en sus fauces, junto con tu vida. Con tu muerte, el destino del reino está sellado.",
+      "elfa",
+      "pícara"
+    )
+
+    game.add_response(
+      2,
+      "Huir. Esconderme del dragón. Salir corriendo",
+      "Traicionando el orgullo de tu raza, el miedo te hace huir. El dragón, despreciando tu cobardía, te persigue con facilidad. Tu resistencia enana no significa nada cuando sus llamas atraviesan tu armadura y consumen tu carne. Con tu muerte, el destino del reino está sellado.",
+      "enano",
+      "guerrero"
+    )
+
+    game.add_response(
+      2,
+      "Huir. Esconderme del dragón. Salir corriendo",
+      "El terror sobrepasa tu determinación enana y abandonas la batalla. El dragón, burlándose de tu vergonzosa huida, te da caza sin esfuerzo. Tu fortaleza ancestral se desmorona cuando sus garras arrancan tu vida. Con tu muerte, el destino del reino está sellado.",
+      "enana",
+      "guerrera"
+    )
+
+    game.add_response(
+      2,
+      "Huir. Esconderme del dragón. Salir corriendo",
+      "El pánico dispersa tu poder rúnico y huyes desesperado. El dragón, inmune a tus débiles protecciones mágicas, te alcanza velozmente. Tus runas ancestrales no te protegen cuando sus llamas consumen tu existencia. Con tu muerte, el destino del reino está sellado.",
+      "enano",
+      "hechicero"
+    )
+
+    game.add_response(
+      2,
+      "Huir. Esconderme del dragón. Salir corriendo",
+      "El miedo rompe tu concentración rúnica y emprendes una cobarde retirada. El dragón, despreciando tus patéticos intentos de defensa, te caza sin piedad. Tu magia de las profundidades se extingue junto con tu vida. Con tu muerte, el destino del reino está sellado.",
+      "enana",
+      "hechicera"
+    )
+
+    game.add_response(
+      2,
+      "Huir. Esconderme del dragón. Salir corriendo",
+      "El terror supera tu astucia de las profundidades y huyes despavorido. El dragón, cuyos sentidos superan tus técnicas de ocultamiento, te encuentra al instante. Tu conocimiento de las sombras resulta inútil cuando sus fauces sellan tu destino. Con tu muerte, el destino del reino está sellado.",
+      "enano",
+      "pícaro"
+    )
+
+    game.add_response(
+      2,
+      "Huir. Esconderme del dragón. Salir corriendo",
+      "El pánico vence a tu instinto subterráneo y buscas escape en las sombras. El dragón, cuya vista penetra tus intentos de ocultarte, te da caza como a una presa indefensa. Tu sigilo de las cavernas termina en sus garras, junto con tu vida. Con tu muerte, el destino del reino está sellado.",
+      "enana",
+      "pícara"
+    )
+    
+    ################  Escena 3 (dragón derrotado)  ##########
+    
+    game.add_scene(
+        3,
+        "¡Lo has conseguido! El ancestral dragón negro, terror de las Montañas del Crepúsculo, ha caído ante tu determinación y coraje. Sus últimos rugidos resuenan entre los picos nevados mientras su cuerpo se desvanece en cenizas llevadas por el viento. Tu nombre será recordado en canciones y leyendas mientras existan estrellas en el cielo y viento en las montañas.",
+        "dragón_derrotado"
+    )
+    
+    
+    
+    game.add_scene(
+        4,
+        "Las llamas del dragón negro consumen los últimos vestigios de esperanza junto con tu vida. Tu valentía no fue suficiente, y ahora tu cuerpo yace entre los huesos calcinados de quienes intentaron esta misma hazaña antes que tú. Tu muerte marca el inicio de una era de oscuridad. La esperanza, como las estrellas en un cielo cubierto de cenizas, se ha extinguido para siempre.",
+        "heroe_derrotado"
     )
