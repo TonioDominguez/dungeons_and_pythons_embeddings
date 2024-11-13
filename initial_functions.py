@@ -1,4 +1,5 @@
 import time
+import pandas as pd
 
 
 '''
@@ -229,8 +230,27 @@ def presentation(c_sheet):
         time.sleep(1)
         print(" ")
         print("El dragón nunca verá venir tu golpe mortal desde las sombras del bosque...")
+
+def create_character():
+    name = get_name()
+    race = get_race(races)
+    profession = get_profession(professions)
     
+    character = {
+        "Nombre": name,
+        "Raza": race,
+        "Profesión": profession
+    }
     
+    c_sheet = pd.DataFrame([character])
+    return c_sheet
+    
+def intro():
+    introduction()
+    c_sheet = create_character()    
+    presentation(c_sheet)
+    
+    return c_sheet
         
 
         
