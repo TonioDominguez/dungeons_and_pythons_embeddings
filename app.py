@@ -84,7 +84,7 @@ class GameEngine:
     def load_scenes(self):
         scenes_responses(self)
 
-#Definir rutas de imágenes y función para escenas
+#Definir rutas de imágenes y función para escenas y presentación
 
 IMAGES_PATH = "images"  
 SCENE_IMAGES = {
@@ -94,16 +94,43 @@ SCENE_IMAGES = {
   4: os.path.join(IMAGES_PATH, "scene4.jpg")
 }
 
-def show_scene_image(scene_id):
-    
-    if scene_id in SCENE_IMAGES and os.path.exists(SCENE_IMAGES[scene_id]):
-        
-        col1, col2, col3 = st.columns(3)
-        
+CHARACTER_IMAGES_PATH = "images"  
+CHARACTER_IMAGES = {
+  ("humano", "guerrero"): os.path.join(CHARACTER_IMAGES_PATH, "humano_guerrero.jpg"),
+  ("humana", "guerrera"): os.path.join(CHARACTER_IMAGES_PATH, "humana_guerrera.jpg"),
+  ("humano", "hechicero"): os.path.join(CHARACTER_IMAGES_PATH, "humano_hechicero.jpg"),
+  ("humana", "hechicera"): os.path.join(CHARACTER_IMAGES_PATH, "humana_hechicera.jpg"),
+  ("humano", "pícaro"): os.path.join(CHARACTER_IMAGES_PATH, "humano_picaro.jpg"),
+  ("humana", "pícara"): os.path.join(CHARACTER_IMAGES_PATH, "humana_picara.jpg"),
+  ("elfo", "guerrero"): os.path.join(CHARACTER_IMAGES_PATH, "elfo_guerrero.jpg"),
+  ("elfa", "guerrera"): os.path.join(CHARACTER_IMAGES_PATH, "elfa_guerrera.jpg"),
+  ("elfo", "hechicero"): os.path.join(CHARACTER_IMAGES_PATH, "elfo_hechicero.jpg"),
+  ("elfa", "hechicera"): os.path.join(CHARACTER_IMAGES_PATH, "elfa_hechicera.jpg"),
+  ("elfo", "pícaro"): os.path.join(CHARACTER_IMAGES_PATH, "elfo_picaro.jpg"),
+  ("elfa", "pícara"): os.path.join(CHARACTER_IMAGES_PATH, "elfa_picara.jpg"),
+  ("enano", "guerrero"): os.path.join(CHARACTER_IMAGES_PATH, "enano_guerrero.jpg"),
+  ("enana", "guerrera"): os.path.join(CHARACTER_IMAGES_PATH, "enana_guerrera.jpg"),
+  ("enano", "hechicero"): os.path.join(CHARACTER_IMAGES_PATH, "enano_hechicero.jpg"),
+  ("enana", "hechicera"): os.path.join(CHARACTER_IMAGES_PATH, "enana_hechicera.jpg"),
+  ("enano", "pícaro"): os.path.join(CHARACTER_IMAGES_PATH, "enano_picaro.jpg"),
+  ("enana", "pícara"): os.path.join(CHARACTER_IMAGES_PATH, "enana_picara.jpg"),
+}
+
+def show_scene_image(scene_id):    
+    if scene_id in SCENE_IMAGES and os.path.exists(SCENE_IMAGES[scene_id]):        
+        col1, col2, col3 = st.columns(3)        
         with col2:
             image = Image.open(SCENE_IMAGES[scene_id])
             st.image(image, width=300)
 
+def show_character_image(race, profession):
+    if (race, profession) in CHARACTER_IMAGES and os.path.exists(CHARACTER_IMAGES[(race, profession)]):
+        col1, col2, col3 = st.columns(3)
+        with col2:
+            image = Image.open(CHARACTER_IMAGES[(race, profession)])
+            st.image(image, width=300)            
+            
+            
         
 # Initialize session state
 if 'game' not in st.session_state:
@@ -156,7 +183,10 @@ if not st.session_state.character_created:
 elif not st.session_state.game_started:
     if not st.session_state.introduction_shown:
         
-        show_scene_image(1)
+        show_character_image(
+            st.session_state.game.character['Raza'].iloc[0],
+            st.session_state.game.character['Profesión'].iloc[0]
+        )
         
         # Mostrar introducción y presentación del personaje
         intro_text = """¡Bienvenido/a a Dungeons&Pythons! Una aventura en donde la magia y el peligro acechan en cada rincón.
