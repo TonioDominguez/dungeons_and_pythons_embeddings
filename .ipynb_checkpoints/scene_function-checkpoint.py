@@ -7,7 +7,7 @@ def scenes_responses(game):
     
     game.add_scene(
         1,
-        "La caza del dragón negro te lleva hacia una montaña, en donde según rumores se encuentra la guarida de la temible criatura. Para escalar a la cumbre, primero tendrás que atravesar un bosque que la rodea. Puede que de camino encuentres algo útil para tu enfrentamiento... ¿Qué haces?",
+        "La caza del dragón negro te lleva hacia una montaña, en donde según rumores se encuentra la guarida de la temible criatura. Para escalar a la cumbre, primero tendrás que atravesar un bosque que la rodea. ¿Explorarás el lugar antes de escalar la montaña o no perderás tiempo y buscarás un sendero que te lleve a la cima?",
         "bosque_entrada"
     )
     
@@ -160,7 +160,7 @@ def scenes_responses(game):
 
     game.add_response(
       1,
-       ["explorar lago", "nadar en lago", "coger objeto", "bucear", "seguir brillo", "alcanzar objeto brillante"],
+       ["explorar lago", "nadar en lago", "coger objeto", "bucear", "seguir brillo", "alcanzar objeto brillante", "recuperar artefacto"],
       "Tras sumergirte en las frías aguas, tus manos encuentran un objeto esférico. Al sacarlo, un conocimiento ancestral te invade: es el orbe arcano, forjado en la Era de los Dragones. Sus energías palpitantes serán cruciales para penetrar las escamas de tu enemigo alado",
       "humano",
       "guerrero"
@@ -168,7 +168,7 @@ def scenes_responses(game):
 
     game.add_response(
       1,
-       ["explorar lago", "nadar en lago", "coger objeto", "bucear", "seguir brillo", "alcanzar objeto brillante"],
+       ["explorar lago", "nadar en lago", "coger objeto", "bucear", "seguir brillo", "alcanzar objeto brillante", "recuperar artefacto"],
       "El agua fría no te detiene mientras recuperas un artefacto brillante. Al examinarlo, reconoces el orbe arcano de las antiguas leyendas. Su poder, diseñado específicamente para la caza de dragones, será tu ventaja en la batalla venidera",
       "humana",
       "guerrera"
@@ -176,7 +176,7 @@ def scenes_responses(game):
 
     game.add_response(
       1,
-       ["explorar lago", "nadar en lago", "coger objeto", "bucear", "seguir brillo", "alcanzar objeto brillante"],
+       ["explorar lago", "nadar en lago", "coger objeto", "bucear", "seguir brillo", "alcanzar objeto brillante", "recuperar artefacto"],
       "Tus manos expertas extraen del lago un orbe resplandeciente. Las runas en su superficie cobran vida bajo tu mirada: es el legendario orbe arcano mata-dragones. Por fin tienes el arma que equilibrará la balanza contra la bestia",
       "enano",
       "guerrero"
@@ -184,7 +184,7 @@ def scenes_responses(game):
 
     game.add_response(
       1,
-       ["explorar lago", "nadar en lago", "coger objeto", "bucear", "seguir brillo", "alcanzar objeto brillante"],
+       ["explorar lago", "nadar en lago", "coger objeto", "bucear", "seguir brillo", "alcanzar objeto brillante", "recuperar artefacto"],
       "Entre las aguas cristalinas, tus dedos rozan un objeto de poder inmenso. Al sacarlo, las inscripciones revelan el mítico orbe arcano, creado por tus ancestros para combatir dragones. Su energía será decisiva en tu próximo encuentro",
       "enana",
       "guerrera"
@@ -192,7 +192,7 @@ def scenes_responses(game):
 
     game.add_response(
       1,
-       ["explorar lago", "nadar en lago", "coger objeto", "bucear", "seguir brillo", "alcanzar objeto brillante"],
+       ["explorar lago", "nadar en lago", "coger objeto", "bucear", "seguir brillo", "alcanzar objeto brillante", "recuperar artefacto"],
       "Con movimientos fluidos, recuperas un orbe brillante del fondo del lago. Tu sangre élfica reconoce el orbe arcano al instante. Sus energías, letales para los dragones, fluirán a través de ti en el combate final",
       "elfo",
       "guerrero"
@@ -200,7 +200,7 @@ def scenes_responses(game):
 
     game.add_response(
       1,
-       ["explorar lago", "nadar en lago", "coger objeto", "bucear", "seguir brillo", "alcanzar objeto brillante"],
+       ["explorar lago", "nadar en lago", "coger objeto", "bucear", "seguir brillo", "alcanzar objeto brillante", "recuperar artefacto"],
       "Las aguas parecen apartarse ante ti mientras extraes un orbe luminoso. Tu intuición élfica confirma su identidad: el orbe arcano cazadragones. Su poder ancestral te ayudará a enfrentar a la bestia en igualdad de condiciones",
       "elfa",
       "guerrera"
@@ -208,7 +208,7 @@ def scenes_responses(game):
 
     game.add_response(
       1,
-       ["explorar lago", "nadar en lago", "coger objeto", "bucear", "seguir brillo", "alcanzar objeto brillante"],
+       ["explorar lago", "nadar en lago", "coger objeto", "bucear", "seguir brillo", "alcanzar objeto brillante", "recuperar artefacto"],
       "Al tocar el objeto sumergido, una descarga de poder arcano recorre tu cuerpo. Es el orbe legendario, cuya magia fue tejida específicamente para destruir dragones. Tus hechizos, amplificados por su poder, serán devastadores",
       "humano",
       "hechicero"
@@ -216,7 +216,7 @@ def scenes_responses(game):
 
     game.add_response(
       1,
-       ["explorar lago", "nadar en lago", "coger objeto", "bucear", "seguir brillo", "alcanzar objeto brillante"],
+       ["explorar lago", "nadar en lago", "coger objeto", "bucear", "seguir brillo", "alcanzar objeto brillante", "recuperar artefacto"],
       "Tus dedos rozan algo que hace que tu magia resuene con fuerza. Al emerger con el orbe arcano, comprendes su propósito: canalizar poder destructivo contra dragones. Esta reliquia multiplicará el poder de tus conjuros",
       "humana",
       "hechicera"
@@ -224,7 +224,7 @@ def scenes_responses(game):
 
     game.add_response(
       1,
-       ["explorar lago", "nadar en lago", "coger objeto", "bucear", "seguir brillo", "alcanzar objeto brillante"],
+       ["explorar lago", "nadar en lago", "coger objeto", "bucear", "seguir brillo", "alcanzar objeto brillante", "recuperar artefacto"],
       "La magia antigua del lago te guía hacia un artefacto de inmenso poder. Al sostener el orbe arcano, las energías fluyen entre ambos, revelando su propósito: es un amplificador mágico diseñado para la destrucción de dragones. Tu victoria está ahora más cerca",
       "elfo",
       "hechicero"
@@ -232,7 +232,7 @@ def scenes_responses(game):
 
     game.add_response(
       1,
-       ["explorar lago", "nadar en lago", "coger objeto", "bucear", "seguir brillo", "alcanzar objeto brillante"],
+       ["explorar lago", "nadar en lago", "coger objeto", "bucear", "seguir brillo", "alcanzar objeto brillante", "recuperar artefacto"],
       "Tus manos encuentran el orbe bajo el agua, y al instante sientes su resonancia mágica. Es el legendario orbe arcano, forjado con hechizos específicos contra dragones. Su poder combinado con tu magia será imparable",
       "elfa",
       "hechicera"
@@ -240,7 +240,7 @@ def scenes_responses(game):
 
     game.add_response(
       1,
-       ["explorar lago", "nadar en lago", "coger objeto", "bucear", "seguir brillo", "alcanzar objeto brillante"],
+       ["explorar lago", "nadar en lago", "coger objeto", "bucear", "seguir brillo", "alcanzar objeto brillante", "recuperar artefacto"],
       "Las runas ancestrales brillan bajo el agua mientras recuperas el orbe arcano. Cada símbolo cuenta la historia de su creación para combatir dragones. Tu conocimiento mágico y este artefacto formarán una combinación letal",
       "enano",
       "hechicero"
@@ -248,7 +248,7 @@ def scenes_responses(game):
 
     game.add_response(
       1,
-       ["explorar lago", "nadar en lago", "coger objeto", "bucear", "seguir brillo", "alcanzar objeto brillante"],
+       ["explorar lago", "nadar en lago", "coger objeto", "bucear", "seguir brillo", "alcanzar objeto brillante", "recuperar artefacto"],
       "Al extraer el orbe del agua, las runas grabadas cobran vida bajo tu toque. Es el mítico orbe arcano, creado en la antigüedad para vencer dragones. Sus energías amplificarán tus hechizos en la batalla que se aproxima",
       "enana",
       "hechicera"
@@ -256,7 +256,7 @@ def scenes_responses(game):
 
     game.add_response(
       1,
-       ["explorar lago", "nadar en lago", "coger objeto", "bucear", "seguir brillo", "alcanzar objeto brillante"],
+       ["explorar lago", "nadar en lago", "coger objeto", "bucear", "seguir brillo", "alcanzar objeto brillante", "recuperar artefacto"],
       "Con la precisión de un experto ladrón, recuperas un tesoro único: el orbe arcano. Tu instinto para los objetos valiosos no te engaña; este artefacto mata-dragones vale más que todas las joyas del reino. Será tu as bajo la manga",
       "humano",
       "pícaro"
@@ -264,7 +264,7 @@ def scenes_responses(game):
 
     game.add_response(
       1,
-       ["explorar lago", "nadar en lago", "coger objeto", "bucear", "seguir brillo", "alcanzar objeto brillante"],
+       ["explorar lago", "nadar en lago", "coger objeto", "bucear", "seguir brillo", "alcanzar objeto brillante", "recuperar artefacto"],
       "Tus hábiles manos encuentran el premio oculto en las profundidades. El orbe arcano, más valioso que cualquier tesoro robado, emite un pulso de energía anti-dragón. Has encontrado el arma perfecta para tu misión",
       "humana",
       "pícara"
@@ -272,7 +272,7 @@ def scenes_responses(game):
 
     game.add_response(
       1,
-       ["explorar lago", "nadar en lago", "coger objeto", "bucear", "seguir brillo", "alcanzar objeto brillante"],
+       ["explorar lago", "nadar en lago", "coger objeto", "bucear", "seguir brillo", "alcanzar objeto brillante", "recuperar artefacto"],
       "Con la experiencia de quien ha manipulado cientos de tesoros, extraes el orbe arcano del lago. Sus propiedades contra dragones lo convierten en el botín más valioso que jamás has encontrado. La victoria será tuya",
       "enano",
       "pícaro"
@@ -280,7 +280,7 @@ def scenes_responses(game):
 
     game.add_response(
       1,
-       ["explorar lago", "nadar en lago", "coger objeto", "bucear", "seguir brillo", "alcanzar objeto brillante"],
+       ["explorar lago", "nadar en lago", "coger objeto", "bucear", "seguir brillo", "alcanzar objeto brillante", "recuperar artefacto"],
       "Tus dedos expertos reconocen el valor del objeto sumergido antes de verlo. Al emerger con el orbe arcano, confirmas tu intuición: este artefacto mata-dragones es el tesoro más importante que has recuperado",
       "enana",
       "pícara"
@@ -288,7 +288,7 @@ def scenes_responses(game):
 
     game.add_response(
       1,
-       ["explorar lago", "nadar en lago", "coger objeto", "bucear", "seguir brillo", "alcanzar objeto brillante"],
+       ["explorar lago", "nadar en lago", "coger objeto", "bucear", "seguir brillo", "alcanzar objeto brillante", "recuperar artefacto"],
       "Tu agilidad élfica te permite recuperar el artefacto sin perturbar las aguas. El orbe arcano, legendario por su poder contra dragones, responde a tu toque. Has encontrado la herramienta perfecta para tu venganza",
       "elfo",
       "pícaro"
@@ -296,7 +296,7 @@ def scenes_responses(game):
 
     game.add_response(
       1,
-       ["explorar lago", "nadar en lago", "coger objeto", "bucear", "seguir brillo", "alcanzar objeto brillante"],
+       ["explorar lago", "nadar en lago", "coger objeto", "bucear", "seguir brillo", "alcanzar objeto brillante", "recuperar artefacto"],
       "Con movimientos precisos, extraes el tesoro oculto. El orbe arcano, temido por los dragones desde tiempos antiguos, ahora está en tus manos. Su poder será crucial en la batalla que se avecina",
       "elfa",
       "pícara"
@@ -306,7 +306,7 @@ def scenes_responses(game):
 
     game.add_response(
       1,
-      ["buscar salida", "escalar montaña", "salir del bosque", "encontrar camino", "ir hacia la montaña"],
+      ["buscar salida", "escalar montaña", "salir del bosque", "encontrar camino", "ir hacia la montaña", "seguir búsqueda del dragón"],
       "Con instinto de guerrero experimentado, encuentras un antiguo sendero de batalla que asciende por la ladera. El camino te llevará directamente hacia la guarida del dragón en la cima de la montaña",
       "humano",
       "guerrero"
@@ -314,7 +314,7 @@ def scenes_responses(game):
 
     game.add_response(
       1,
-      ["buscar salida", "escalar montaña", "salir del bosque", "encontrar camino", "ir hacia la montaña"],
+      ["buscar salida", "escalar montaña", "salir del bosque", "encontrar camino", "ir hacia la montaña", "seguir búsqueda del dragón"],
       "Tu entrenamiento militar te permite identificar un camino estratégico entre los árboles. La ruta se eleva hacia la cima de la montaña, donde te espera tu enemigo el dragón alado",
       "humana",
       "guerrera"
@@ -322,7 +322,7 @@ def scenes_responses(game):
 
     game.add_response(
       1,
-      ["buscar salida", "escalar montaña", "salir del bosque", "encontrar camino", "ir hacia la montaña"],
+      ["buscar salida", "escalar montaña", "salir del bosque", "encontrar camino", "ir hacia la montaña", "seguir búsqueda del dragón"],
       "Tus ojos expertos en terreno montañoso descubren un sendero tallado en la roca. El camino serpentea hacia la cima donde se oculta el malévolo dragón",
       "enano",
       "guerrero"
@@ -330,7 +330,7 @@ def scenes_responses(game):
 
     game.add_response(
       1,
-      ["buscar salida", "escalar montaña", "salir del bosque", "encontrar camino", "ir hacia la montaña"],
+      ["buscar salida", "escalar montaña", "salir del bosque", "encontrar camino", "ir hacia la montaña", "seguir búsqueda del dragón"],
       "Tu conocimiento de la montaña te revela un antiguo camino enano que asciende por la ladera. La ruta te conducirá directamente hacia el territorio del dragón",
       "enana",
       "guerrera"
@@ -338,7 +338,7 @@ def scenes_responses(game):
 
     game.add_response(
       1,
-      ["buscar salida", "escalar montaña", "salir del bosque", "encontrar camino", "ir hacia la montaña"],
+      ["buscar salida", "escalar montaña", "salir del bosque", "encontrar camino", "ir hacia la montaña", "seguir búsqueda del dragón"],
       "Con agilidad élfica, descubres un sendero natural entre los árboles que se eleva hacia la montaña. El camino te guiará hasta la guarida del dragón ubicado en la cima",
       "elfo",
       "guerrero"
@@ -346,7 +346,7 @@ def scenes_responses(game):
 
     game.add_response(
       1,
-      ["buscar salida", "escalar montaña", "salir del bosque", "encontrar camino", "ir hacia la montaña"],
+      ["buscar salida", "escalar montaña", "salir del bosque", "encontrar camino", "ir hacia la montaña", "seguir búsqueda del dragón"],
       "Tu conexión con la naturaleza te revela un camino oculto que asciende por la ladera. La senda te conducirá hasta el dominio del dragón en la cima",
       "elfa",
       "guerrera"
@@ -354,7 +354,7 @@ def scenes_responses(game):
 
     game.add_response(
       1,
-      ["buscar salida", "escalar montaña", "salir del bosque", "encontrar camino", "ir hacia la montaña"],
+      ["buscar salida", "escalar montaña", "salir del bosque", "encontrar camino", "ir hacia la montaña", "seguir búsqueda del dragón"],
       "Tus sentidos mágicos detectan un antiguo sendero imbuido de poder. El camino se eleva hacia la cima, donde aguarda tu encuentro con el dragón",
       "humano",
       "hechicero"
@@ -362,7 +362,7 @@ def scenes_responses(game):
 
     game.add_response(
       1,
-      ["buscar salida", "escalar montaña", "salir del bosque", "encontrar camino", "ir hacia la montaña"],
+      ["buscar salida", "escalar montaña", "salir del bosque", "encontrar camino", "ir hacia la montaña", "seguir búsqueda del dragón"],
       "Tu percepción arcana te guía hacia un camino místico que asciende por la montaña. La senda te llevará hasta el territorio de tu adversario el dragón",
       "humana",
       "hechicera"
@@ -370,7 +370,7 @@ def scenes_responses(game):
 
     game.add_response(
       1,
-      ["buscar salida", "escalar montaña", "salir del bosque", "encontrar camino", "ir hacia la montaña"],
+      ["buscar salida", "escalar montaña", "salir del bosque", "encontrar camino", "ir hacia la montaña", "seguir búsqueda del dragón"],
       "Tu conexión con la magia antigua te revela un sendero élfico olvidado que asciende hacia la montaña. Las energías arcanas te indican que este camino te llevará directamente a la guarida del dragón",
       "elfo",
       "hechicero"
@@ -378,7 +378,7 @@ def scenes_responses(game):
 
     game.add_response(
       1,
-      ["buscar salida", "escalar montaña", "salir del bosque", "encontrar camino", "ir hacia la montaña"],
+      ["buscar salida", "escalar montaña", "salir del bosque", "encontrar camino", "ir hacia la montaña", "seguir búsqueda del dragón"],
       "Las corrientes mágicas del bosque te muestran el camino más directo hacia la morada del dragón. La senda antigua serpentea hacia la cima donde aguarda tu destino",
       "elfa",
       "hechicera"
@@ -386,7 +386,7 @@ def scenes_responses(game):
 
     game.add_response(
       1,
-      ["buscar salida", "escalar montaña", "salir del bosque", "encontrar camino", "ir hacia la montaña"],
+      ["buscar salida", "escalar montaña", "salir del bosque", "encontrar camino", "ir hacia la montaña", "seguir búsqueda del dragón"],
       "Tus conocimientos rúnicos te permiten identificar antiguas marcas que señalan el camino hacia la cima. Las inscripciones advierten de la presencia del dragón en lo alto de la montaña",
       "enano",
       "hechicero"
@@ -394,7 +394,7 @@ def scenes_responses(game):
 
     game.add_response(
       1,
-      ["buscar salida", "escalar montaña", "salir del bosque", "encontrar camino", "ir hacia la montaña"],
+      ["buscar salida", "escalar montaña", "salir del bosque", "encontrar camino", "ir hacia la montaña", "seguir búsqueda del dragón"],
       "Las runas ancestrales en las rocas te guían por un sendero seguro hacia la montaña. Cada marca confirma que te acercas al territorio del dragón",
       "enana",
       "hechicera"
@@ -402,7 +402,7 @@ def scenes_responses(game):
 
     game.add_response(
       1,
-      ["buscar salida", "escalar montaña", "salir del bosque", "encontrar camino", "ir hacia la montaña"],
+      ["buscar salida", "escalar montaña", "salir del bosque", "encontrar camino", "ir hacia la montaña", "seguir búsqueda del dragón"],
       "Tu experiencia rastreando te permite encontrar un camino discreto y poco transitado hacia la montaña. Las señales de actividad del dragón se hacen más evidentes conforme el sendero asciende",
       "humano",
       "pícaro"
@@ -410,7 +410,7 @@ def scenes_responses(game):
 
     game.add_response(
       1,
-      ["buscar salida", "escalar montaña", "salir del bosque", "encontrar camino", "ir hacia la montaña"],
+      ["buscar salida", "escalar montaña", "salir del bosque", "encontrar camino", "ir hacia la montaña", "seguir búsqueda del dragón"],
       "Descubres un sendero oculto que ofrece buena cobertura en su ascenso hacia la montaña. Las marcas de garras y cenizas confirman que conduce a la guarida del dragón",
       "humana",
       "pícara"
@@ -418,7 +418,7 @@ def scenes_responses(game):
 
     game.add_response(
       1,
-      ["buscar salida", "escalar montaña", "salir del bosque", "encontrar camino", "ir hacia la montaña"],
+      ["buscar salida", "escalar montaña", "salir del bosque", "encontrar camino", "ir hacia la montaña", "seguir búsqueda del dragón"],
       "Tu ojo experto detecta un antiguo camino de mineros que sube hacia la montaña. Las huellas y rastros indican que el dragón usa esta ruta para acceder a su guarida",
       "enano",
       "pícaro"
@@ -426,7 +426,7 @@ def scenes_responses(game):
 
     game.add_response(
       1,
-      ["buscar salida", "escalar montaña", "salir del bosque", "encontrar camino", "ir hacia la montaña"],
+      ["buscar salida", "escalar montaña", "salir del bosque", "encontrar camino", "ir hacia la montaña", "seguir búsqueda del dragón"],
       "Encuentras marcas sutiles en las rocas que indican una ruta segura hacia la cima. El camino muestra signos claros de ser la ruta hacia el territorio del dragón",
       "enana",
       "pícara"
@@ -434,7 +434,7 @@ def scenes_responses(game):
 
     game.add_response(
       1,
-      ["buscar salida", "escalar montaña", "salir del bosque", "encontrar camino", "ir hacia la montaña"],
+      ["buscar salida", "escalar montaña", "salir del bosque", "encontrar camino", "ir hacia la montaña", "seguir búsqueda del dragón"],
       "Tu sigilo natural te ayuda a encontrar un sendero escondido que asciende discretamente. Las señales en el camino confirman que lleva hacia la guarida del dragón",
       "elfo",
       "pícaro"
@@ -442,7 +442,7 @@ def scenes_responses(game):
 
     game.add_response(
       1,
-      ["buscar salida", "escalar montaña", "salir del bosque", "encontrar camino", "ir hacia la montaña"],
+      ["buscar salida", "escalar montaña", "salir del bosque", "encontrar camino", "ir hacia la montaña", "seguir búsqueda del dragón"],
       "Tu afinidad con el bosque te revela un camino secreto que serpentea hacia la montaña. El rastro de destrucción sutil indica que este sendero lleva al dominio del dragón",
       "elfa",
       "pícara"
@@ -463,7 +463,7 @@ def scenes_responses(game):
     game.add_response(
         2,
         ["atacar", "luchar", "enfrentar dragón"],
-        "Te lanzas al combate con determinación. El dragón responde con un rugido ensordecedor y una llamarada que apenas esquivas",
+        "Te lanzas al combate con determinación. El dragón responde con un rugido ensordecedor y una llamarada que apenas esquivas. Intuyes que te va a hacer falta algo más que fuerta bruta para derrotar a la criatura",
         "humano",
         "guerrero"
     )
