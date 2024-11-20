@@ -41,7 +41,7 @@ class GameEngine:
         if scene_id not in self.responses:
             self.responses[scene_id] = []
       
-    def add_response(self, scene_id, input_patterns, response_text, race_mod=None, profession_mod=None):
+    def add_response(self, scene_id, input_patterns, response_text, race_mod=None, profession_mod=None, response_image=None):
         if isinstance(input_patterns, str):
             input_patterns = [input_patterns]
       
@@ -50,6 +50,7 @@ class GameEngine:
             'text': response_text,
             'race_modifier': race_mod,
             'profession_modifier': profession_mod,
+            'image': response_image,
             'embeddings': [self.model.encode(pattern) for pattern in input_patterns]
         }
         self.responses[scene_id].append(response)
@@ -76,11 +77,18 @@ class GameEngine:
                 best_score = max_similarity
                 best_response = response
       
+        if best_response:
+            if current_scene_id == 1 and "orbe arcano" in best_response["text"].lower():
+                self.orb_found = True
+        
         if best_score >= 0.7:
-            return best_response["text"]
+            
+            return best_response
+        
+        
         else:
             return "Tu acción no está contemplada por ahora en el juego. Sé más específico"
-  
+    
     def load_scenes(self):
         scenes_responses(self)
 
@@ -116,6 +124,13 @@ CHARACTER_IMAGES = {
   ("enana", "pícara"): os.path.join(CHARACTER_IMAGES_PATH, "enana_picara.jpg"),
 }
 
+RESPONSE_IMAGES_PATH = "images"
+RESPONSE_IMAGES = {
+    "explorar bosque": os.path.join(RESPONSE_IMAGES_PATH, "lago.jpg"),
+    "explorar lago": os.path.join(RESPONSE_IMAGES_PATH, "orbe.jpg")
+}
+
+
 def show_scene_image(scene_id):    
     if scene_id in SCENE_IMAGES and os.path.exists(SCENE_IMAGES[scene_id]):        
         col1, col2, col3 = st.columns(3)        
@@ -130,6 +145,10 @@ def show_character_image(race, profession):
             image = Image.open(CHARACTER_IMAGES[(race, profession)])
             st.image(image, width=300)            
             
+def show_response_image(action):
+        if action in RESPONSE_IMAGES and os.path.exists(RESPONSE_IMAGES[action]):
+            image = Image.open(RESPONSE_IMAGES[action])
+            st.image(image, width=300)
             
         
 # Initialize session state
@@ -145,6 +164,8 @@ if 'current_text' not in st.session_state:
     st.session_state.current_text = ""
 if 'introduction_shown' not in st.session_state:
     st.session_state.introduction_shown = False
+if 'orb_found' not in st.session_state:
+    st.session_state.orb_found = False
 
 # Title
 st.markdown("<h1 style='text-align: center;'>Dungeons & Pythons</h1>", unsafe_allow_html=True)
@@ -152,7 +173,7 @@ st.markdown("<h1 style='text-align: center;'>Dungeons & Pythons</h1>", unsafe_al
 # Contenedor principal para el log del juego
 main_container = st.empty()
 
-# Character Creation Section
+# Crea Personje
 if not st.session_state.character_created:
     st.markdown("<h2 style='text-align: center;'>Crea tu personaje</h1>", unsafe_allow_html=True)
   
@@ -192,7 +213,7 @@ elif not st.session_state.game_started:
         intro_text = """¡Bienvenido/a a Dungeons&Pythons! Una aventura en donde la magia y el peligro acechan en cada rincón.
 Estás a punto de embarcarte en una gesta que pondrá a prueba tu valentía y astucia.
 
-¡El destino del reino está en tus manos! ¿Serás tú quién salve al reino?."""
+¡El destino del reino está en tus manos! ¿Serás tú quién salve a sus habitantes?."""
 
         # Obtener la presentación del personaje basada en el c_sheet
         character_presentation = presentation(st.session_state.game.character)
@@ -213,6 +234,8 @@ Estás a punto de embarcarte en una gesta que pondrá a prueba tu valentía y as
 
 else:
     
+    image_container = st.empty()
+    
     show_scene_image(st.session_state.current_scene_id)
     
     # Mostrar el texto actual
@@ -227,33 +250,58 @@ else:
             with st.spinner('Procesando tu acción...'):
             
                 # Obtener respuesta
-                response = st.session_state.game.find_best_response(user_input.lower(), st.session_state.current_scene_id)
+                response_obj = st.session_state.game.find_best_response(user_input.lower(), st.session_state.current_scene_id)
+                
+                response_text = ""
+                
+                if isinstance (response_obj, dict):
+                    response_text = response_obj["text"]
+                
+                # Se limpia la imagen anterior
+                    image_container.empty()
+                
+                # Condición que muestra la imagen si coincide el patron en respuesta
+                
+                    if "image" in response_obj and response_obj["image"]:
+                        with image_container:
+                            show_response_image(response_obj["image"])
+                    else:
+                        with image_container:
+                            show_scene_image(st.session_state.current_scene_id)
+                
             
                 # Actualizar el texto actual
-                st.session_state.current_text = response
+                    st.session_state.current_text = response_text
+                
+                # Verificar si el orbe arcano fue encontrado en escena 1
+                    if st.session_state.current_scene_id == 1 and "orbe arcano" in response_text.lower():
+                        st.session_state.orb_found = True
             
                 # Verificar cambios de escena
-                new_scene = None
-                if st.session_state.current_scene_id == 1 and "dragón" in response.lower():
-                    st.session_state.current_scene_id = 2
-                    new_scene = st.session_state.game.scenes[2]["text"]
-                    st.session_state.current_text = f"{response}\n\n{new_scene}"
+                    new_scene = None
+                    if st.session_state.current_scene_id == 1 and "dragón" in response_text.lower():
+                        st.session_state.current_scene_id = 2
+                        new_scene = st.session_state.game.scenes[2]["text"]
+                        st.session_state.current_text = f"{response_text}\n\n{new_scene}"
           
-                elif st.session_state.current_scene_id == 2 and "orbe" in response.lower():
-                    st.session_state.current_scene_id = 3
-                    new_scene = st.session_state.game.scenes[3]["text"]
-                    st.session_state.current_text = f"{response}\n\n{new_scene}\n\n ¡HAS GANADO!"
-          
-                elif st.session_state.current_scene_id == 2 and "con tu muerte" in response.lower():
-                    st.session_state.current_scene_id = 4
-                    new_scene = st.session_state.game.scenes[4]["text"]
-                    st.session_state.current_text = f"{response}\n\n{new_scene}\n\n ¡HAS PERDIDO! ¡INTENTALO OTRA VEZ"
-          
-                else:
-                    st.session_state.current_text = response
+                    elif st.session_state.current_scene_id == 2 and "orbe" in response_text.lower() and st.session_state.orb_found:
+                        st.session_state.current_scene_id = 3
+                        new_scene = st.session_state.game.scenes[3]["text"]
+                        st.session_state.current_text = f"{response_text}\n\n{new_scene}\n\n ¡HAS GANADO!"
+
+                    elif st.session_state.current_scene_id == 2 and "con tu muerte" in response_text.lower():
+                        st.session_state.current_scene_id = 4
+                        new_scene = st.session_state.game.scenes[4]["text"]
+                        st.session_state.current_text = f"{response_text}\n\n{new_scene}\n\n ¡HAS PERDIDO! ¡INTENTALO OTRA VEZ"
+
+                    else:
+                        st.session_state.current_text = response_text
+                        
+                else: #Si no hay una respuesta que coincida
+                    st.session_state.current_text = "No hay respuestas relacionadas con tu acción. Sé más específico"
             
             # Actualiza interfaz cuando termina todo el proceso embedding
-            st.experimental_rerun()
+            st.rerun()
 
     # Reset button
     if st.button("Reiniciar Juego"):

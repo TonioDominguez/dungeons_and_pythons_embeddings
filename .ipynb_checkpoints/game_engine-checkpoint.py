@@ -11,6 +11,7 @@ class GameEngine:
         self.scenes = {}
         self.responses = {}
         self.similarity_threshold = 0.3
+        self.orb_found = False
     
     def set_character(self, c_sheet):
         self.character = c_sheet
@@ -26,7 +27,7 @@ class GameEngine:
         if scene_id not in self.responses:
             self.responses[scene_id] = []
     
-    def add_response(self, scene_id, input_patterns, response_text, race_mod=None, profession_mod=None):
+    def add_response(self, scene_id, input_patterns, response_text, race_mod=None, profession_mod=None, response_image=None):
         
         if isinstance(input_patterns, str):
             input_patterns = [input_patterns]
@@ -46,7 +47,6 @@ class GameEngine:
             return "No hay respuestas disponibles para esta escena."    
         
         user_embedding = self.model.encode(user_input)
-        #best_score = self.similarity_threshold
         best_score = -1
         best_response = None
         
@@ -64,7 +64,10 @@ class GameEngine:
                 best_score = max_similarity
                 best_response = response
             
-        #return best_response['text'] if best_response else "No entiendo qué quieres hacer. Sé más específico."
+        if best_response:
+            if current_scene_id == 1 and "orbe arcano" in best_response["text"].lower():
+                self.orb_found = True
+        
         if best_score >= 0.7:
             return best_response["text"]
         else:
@@ -103,7 +106,7 @@ def play_game(c_sheet):
             print("\n" + game.scenes[current_scene_id]["text"])
             continue
                 
-        if current_scene_id == 2 and "orbe" in response.lower():
+        if current_scene_id == 2 and "orbe" in response.lower() and game.orb_found:
             current_scene_id = 3
             time.sleep(1.5)
             print("\n" + game.scenes[current_scene_id]["text"])
