@@ -133,6 +133,44 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
+st.markdown("""
+<style>
+  /* Color negro para el texto dentro de los selectbox */
+  .stSelectbox select option {
+      color: black !important;
+  }
+  
+  /* Color negro para el texto seleccionado en los selectbox */
+  .stSelectbox select {
+      color: black !important;
+  }
+  
+  /* Color negro para el texto en el input */
+  .stTextInput input {
+      color: black !important;
+  }
+  
+  /* Para asegurar que el texto sea visible en el dropdown */
+  div[data-baseweb="select"] ul {
+      color: black !important;
+  }
+  
+  div[data-baseweb="select"] div {
+      color: black !important;
+  }
+  
+  /* Para el texto seleccionado */
+  .st-bd {
+      color: black !important;
+  }
+  
+  /* Para las opciones en el menú desplegable */
+  .st-be {
+      color: black !important;
+  }
+</style>
+""", unsafe_allow_html=True)
+
 
 #CONFIGURACIÓN: PÁGINA DE INICIO
 
