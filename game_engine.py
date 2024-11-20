@@ -37,6 +37,7 @@ class GameEngine:
             'text': response_text,
             'race_modifier': race_mod,
             'profession_modifier': profession_mod,
+            'image': response_image,
             'embeddings': [self.model.encode(pattern) for pattern in input_patterns]
         }
         self.responses[scene_id].append(response)
