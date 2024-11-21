@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 from sentence_transformers import SentenceTransformer
 import numpy as np
-import time
 from initial_functions import create_character, races, professions, introduction, presentation
 from scene_function import scenes_responses
 from PIL import Image
@@ -220,6 +219,24 @@ def home_page():
     - Creación de personaje con 18 combinaciones posibles (elección de género, profesión y raza)
     - Historia interactiva. Narrativa personalizada para cada uno de los 18 personajes
     - 4 escenarios, 126 respuestas y 2 finales predefinidos
+    
+    ### Características Técnicas
+    - Sistema NLP (Embeddings) para interpretar las acciones
+    - Sistema de estado de sesión para mantener el progreso
+    - Sistema de imágenes dinámico basado en contexto
+    - Gestión de estados y escenas del juego
+    
+    ### Modelos de IA
+    - **all-MiniLM-L6-v2**: Modelo de embeddings 
+    - Sistema de similitud semántica para interpretación el texto libre
+    
+    ### Bibliotecas Python:
+    - **Streamlit**: Framework principal para la interfaz web interactiva
+    - **Sentence-Transformers**: Modelo NLP para entender las acciones del usuario
+    - **Pandas**: Manejo de datos estructurados para la información del personaje
+    - **NumPy**: Operaciones con vectores para el sistema de similitud
+    - **Pillow (PIL)**: Procesamiento y visualización de imágenes
+    
     ''')
     
     st.markdown('''

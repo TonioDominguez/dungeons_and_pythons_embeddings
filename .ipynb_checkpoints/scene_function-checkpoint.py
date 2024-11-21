@@ -178,7 +178,7 @@ def scenes_responses(game):
 
     game.add_response(
       1,
-       ["explorar lago", "nadar en lago", "coger objeto", "bucear", "seguir brillo", "alcanzar objeto brillante", "recuperar artefacto", "recoger tesoro", "ir al agua"],
+       ["explorar lago", "nadar en lago", "coger objeto", "recoger artefacto", "seguir brillo", "alcanzar objeto brillante", "recuperar artefacto", "recoger tesoro", "ir al agua"],
       "Tras sumergirte en las frías aguas, tus manos encuentran un objeto esférico. Al sacarlo, un conocimiento ancestral te invade: es el orbe arcano, forjado en la Era de los Dragones. Sus energías palpitantes serán cruciales para penetrar las escamas de tu enemigo alado",
       "humano",
       "guerrero",
@@ -187,7 +187,7 @@ def scenes_responses(game):
 
     game.add_response(
       1,
-       ["explorar lago", "nadar en lago", "coger objeto", "bucear", "seguir brillo", "alcanzar objeto brillante", "recuperar artefacto", "recoger tesoro", "ir al agua"],
+       ["explorar lago", "nadar en lago", "coger objeto", "recoger artefacto", "seguir brillo", "alcanzar objeto brillante", "recuperar artefacto", "recoger tesoro", "ir al agua"],
       "El agua fría no te detiene mientras recuperas un artefacto brillante. Al examinarlo, reconoces el orbe arcano de las antiguas leyendas. Su poder, diseñado específicamente para la caza de dragones, será tu ventaja en la batalla venidera",
       "humana",
       "guerrera",
@@ -196,7 +196,7 @@ def scenes_responses(game):
 
     game.add_response(
       1,
-       ["explorar lago", "nadar en lago", "coger objeto", "bucear", "seguir brillo", "alcanzar objeto brillante", "recuperar artefacto", "recoger tesoro", "ir al agua"],
+       ["explorar lago", "nadar en lago", "coger objeto", "recoger artefacto", "seguir brillo", "alcanzar objeto brillante", "recuperar artefacto", "recoger tesoro", "ir al agua"],
       "Tus manos expertas extraen del lago un orbe resplandeciente. Las runas en su superficie cobran vida bajo tu mirada: es el legendario orbe arcano mata-dragones. Por fin tienes el arma que equilibrará la balanza contra la bestia",
       "enano",
       "guerrero",
@@ -205,7 +205,7 @@ def scenes_responses(game):
 
     game.add_response(
       1,
-       ["explorar lago", "nadar en lago", "coger objeto", "bucear", "seguir brillo", "alcanzar objeto brillante", "recuperar artefacto", "recoger tesoro", "ir al agua"],
+       ["explorar lago", "nadar en lago", "coger objeto", "recoger artefacto", "seguir brillo", "alcanzar objeto brillante", "recuperar artefacto", "recoger tesoro", "ir al agua"],
       "Entre las aguas cristalinas, tus dedos rozan un objeto de poder inmenso. Al sacarlo, las inscripciones revelan el mítico orbe arcano, creado por tus ancestros para combatir dragones. Su energía será decisiva en tu próximo encuentro",
       "enana",
       "guerrera",
@@ -214,7 +214,7 @@ def scenes_responses(game):
 
     game.add_response(
       1,
-       ["explorar lago", "nadar en lago", "coger objeto", "bucear", "seguir brillo", "alcanzar objeto brillante", "recuperar artefacto", "recoger tesoro", "ir al agua"],
+       ["explorar lago", "nadar en lago", "coger objeto", "recoger artefacto", "seguir brillo", "alcanzar objeto brillante", "recuperar artefacto", "recoger tesoro", "ir al agua"],
       "Con movimientos fluidos, recuperas un objeto brillante del fondo del lago. Tu sangre élfica reconoce el orbe arcano al instante. Sus energías, letales para los dragones, fluirán a través de ti en el combate final",
       "elfo",
       "guerrero",
@@ -223,7 +223,7 @@ def scenes_responses(game):
 
     game.add_response(
       1,
-       ["explorar lago", "nadar en lago", "coger objeto", "bucear", "seguir brillo", "alcanzar objeto brillante", "recuperar artefacto", "recoger tesoro", "ir al agua"],
+       ["explorar lago", "nadar en lago", "coger objeto", "recoger artefacto", "seguir brillo", "alcanzar objeto brillante", "recuperar artefacto", "recoger tesoro", "ir al agua"],
       "Las aguas parecen apartarse ante ti mientras extraes un orbe luminoso. Tu intuición élfica confirma su identidad: el orbe arcano cazadragones. Su poder ancestral te ayudará a enfrentar a la bestia en igualdad de condiciones",
       "elfa",
       "guerrera",
@@ -232,7 +232,7 @@ def scenes_responses(game):
 
     game.add_response(
       1,
-       ["explorar lago", "nadar en lago", "coger objeto", "bucear", "seguir brillo", "alcanzar objeto brillante", "recuperar artefacto", "recoger tesoro", "ir al agua"],
+       ["explorar lago", "nadar en lago", "coger objeto", "recoger artefacto", "seguir brillo", "alcanzar objeto brillante", "recuperar artefacto", "recoger tesoro", "ir al agua"],
       "Al tocar el objeto sumergido, una descarga de poder recorre tu cuerpo. Es el orbe arcano, cuya magia fue tejida específicamente para destruir dragones. Tus hechizos, amplificados por su poder, serán devastadores",
       "humano",
       "hechicero",
@@ -241,7 +241,7 @@ def scenes_responses(game):
 
     game.add_response(
       1,
-       ["explorar lago", "nadar en lago", "coger objeto", "bucear", "seguir brillo", "alcanzar objeto brillante", "recuperar artefacto", "recoger tesoro", "ir al agua"],
+       ["explorar lago", "nadar en lago", "coger objeto", "recoger artefacto", "seguir brillo", "alcanzar objeto brillante", "recuperar artefacto", "recoger tesoro", "ir al agua"],
       "Tus dedos rozan algo que hace que tu magia resuene con fuerza. Al emerger con el orbe arcano, comprendes su propósito: canalizar poder destructivo contra dragones. Esta reliquia multiplicará el poder de tus conjuros",
       "humana",
       "hechicera",
@@ -250,7 +250,7 @@ def scenes_responses(game):
 
     game.add_response(
       1,
-       ["explorar lago", "nadar en lago", "coger objeto", "bucear", "seguir brillo", "alcanzar objeto brillante", "recuperar artefacto", "recoger tesoro", "ir al agua"],
+       ["explorar lago", "nadar en lago", "coger objeto", "recoger artefacto", "seguir brillo", "alcanzar objeto brillante", "recuperar artefacto", "recoger tesoro", "ir al agua"],
       "La magia antigua del lago te guía hacia un artefacto de inmenso poder. Al sostener el orbe arcano, las energías fluyen entre ambos, revelando su propósito: es un amplificador mágico diseñado para la destrucción de dragones. Tu victoria está ahora más cerca",
       "elfo",
       "hechicero",
@@ -259,7 +259,7 @@ def scenes_responses(game):
 
     game.add_response(
       1,
-       ["explorar lago", "nadar en lago", "coger objeto", "bucear", "seguir brillo", "alcanzar objeto brillante", "recuperar artefacto", "recoger tesoro", "ir al agua"],
+       ["explorar lago", "nadar en lago", "coger objeto", "recoger artefacto", "seguir brillo", "alcanzar objeto brillante", "recuperar artefacto", "recoger tesoro", "ir al agua"],
       "Tus manos encuentran el orbe bajo el agua, y al instante sientes su resonancia mágica. Es el legendario orbe arcano, forjado con hechizos específicos contra dragones. Su poder combinado con tu magia será imparable",
       "elfa",
       "hechicera",
@@ -268,7 +268,7 @@ def scenes_responses(game):
 
     game.add_response(
       1,
-       ["explorar lago", "nadar en lago", "coger objeto", "bucear", "seguir brillo", "alcanzar objeto brillante", "recuperar artefacto", "recoger tesoro", "ir al agua"],
+       ["explorar lago", "nadar en lago", "coger objeto", "recoger artefacto", "seguir brillo", "alcanzar objeto brillante", "recuperar artefacto", "recoger tesoro", "ir al agua"],
       "Las runas ancestrales brillan bajo el agua mientras recuperas el orbe arcano. Cada símbolo cuenta la historia de su creación para combatir dragones. Tu conocimiento mágico y este artefacto formarán una combinación letal",
       "enano",
       "hechicero",
@@ -277,7 +277,7 @@ def scenes_responses(game):
 
     game.add_response(
       1,
-       ["explorar lago", "nadar en lago", "coger objeto", "bucear", "seguir brillo", "alcanzar objeto brillante", "recuperar artefacto", "recoger tesoro", "ir al agua"],
+       ["explorar lago", "nadar en lago", "coger objeto", "recoger artefacto", "seguir brillo", "alcanzar objeto brillante", "recuperar artefacto", "recoger tesoro", "ir al agua"],
       "Al extraer el orbe del agua, las runas grabadas cobran vida bajo tu toque. Es el mítico orbe arcano, creado en la antigüedad para vencer dragones. Sus energías amplificarán tus hechizos en la batalla que se aproxima",
       "enana",
       "hechicera",
@@ -286,7 +286,7 @@ def scenes_responses(game):
 
     game.add_response(
       1,
-       ["explorar lago", "nadar en lago", "coger objeto", "bucear", "seguir brillo", "alcanzar objeto brillante", "recuperar artefacto", "recoger tesoro", "ir al agua"],
+       ["explorar lago", "nadar en lago", "coger objeto", "recoger artefacto", "seguir brillo", "alcanzar objeto brillante", "recuperar artefacto", "recoger tesoro", "ir al agua"],
       "Con la precisión de un experto ladrón, recuperas un tesoro único: el orbe arcano. Tu instinto para los objetos valiosos no te engaña; este artefacto mata-dragones vale más que todas las joyas del reino. Será tu as bajo la manga",
       "humano",
       "pícaro",
@@ -295,7 +295,7 @@ def scenes_responses(game):
 
     game.add_response(
       1,
-       ["explorar lago", "nadar en lago", "coger objeto", "bucear", "seguir brillo", "alcanzar objeto brillante", "recuperar artefacto", "recoger tesoro", "ir al agua"],
+       ["explorar lago", "nadar en lago", "coger objeto", "recoger artefacto", "seguir brillo", "alcanzar objeto brillante", "recuperar artefacto", "recoger tesoro", "ir al agua"],
       "Tus hábiles manos encuentran el premio oculto en las profundidades. El orbe arcano, más valioso que cualquier tesoro robado, emite un pulso de energía anti-dragón. Has encontrado el arma perfecta para tu misión",
       "humana",
       "pícara",
@@ -304,7 +304,7 @@ def scenes_responses(game):
 
     game.add_response(
       1,
-       ["explorar lago", "nadar en lago", "coger objeto", "bucear", "seguir brillo", "alcanzar objeto brillante", "recuperar artefacto", "recoger tesoro", "ir al agua"],
+       ["explorar lago", "nadar en lago", "coger objeto", "recoger artefacto", "seguir brillo", "alcanzar objeto brillante", "recuperar artefacto", "recoger tesoro", "ir al agua"],
       "Con la experiencia de quien ha manipulado cientos de tesoros, extraes el orbe arcano del lago. Sus propiedades contra dragones lo convierten en el botín más valioso que jamás has encontrado. La victoria será tuya",
       "enano",
       "pícaro",
@@ -313,7 +313,7 @@ def scenes_responses(game):
 
     game.add_response(
       1,
-       ["explorar lago", "nadar en lago", "coger objeto", "bucear", "seguir brillo", "alcanzar objeto brillante", "recuperar artefacto", "recoger tesoro", "ir al agua"],
+       ["explorar lago", "nadar en lago", "coger objeto", "recoger artefacto", "seguir brillo", "alcanzar objeto brillante", "recuperar artefacto", "recoger tesoro", "ir al agua"],
       "Tus dedos expertos reconocen el valor del objeto sumergido antes de verlo. Al emerger con el orbe arcano, confirmas tu intuición: este artefacto mata-dragones es el tesoro más importante que has recuperado",
       "enana",
       "pícara",
@@ -322,7 +322,7 @@ def scenes_responses(game):
 
     game.add_response(
       1,
-       ["explorar lago", "nadar en lago", "coger objeto", "bucear", "seguir brillo", "alcanzar objeto brillante", "recuperar artefacto", "recoger tesoro", "ir al agua"],
+       ["explorar lago", "nadar en lago", "coger objeto", "recoger artefacto", "seguir brillo", "alcanzar objeto brillante", "recuperar artefacto", "recoger tesoro", "ir al agua"],
       "Tu agilidad élfica te permite recuperar el artefacto sin perturbar las aguas. El orbe arcano, legendario por su poder contra dragones, responde a tu toque. Has encontrado la herramienta perfecta para tu venganza",
       "elfo",
       "pícaro",
@@ -331,7 +331,7 @@ def scenes_responses(game):
 
     game.add_response(
       1,
-       ["explorar lago", "nadar en lago", "coger objeto", "bucear", "seguir brillo", "alcanzar objeto brillante", "recuperar artefacto", "recoger tesoro", "ir al agua"],
+       ["explorar lago", "nadar en lago", "coger objeto", "recoger artefacto", "seguir brillo", "alcanzar objeto brillante", "recuperar artefacto", "recoger tesoro", "ir al agua"],
       "Con movimientos precisos, extraes el tesoro oculto. El orbe arcano, temido por los dragones desde tiempos antiguos, ahora está en tus manos. Su poder será crucial en la batalla que se avecina",
       "elfa",
       "pícara",
