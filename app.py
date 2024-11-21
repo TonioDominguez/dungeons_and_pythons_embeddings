@@ -488,7 +488,7 @@ def game_page():
                 st.session_state.game.set_character(c_sheet)
                 st.session_state.character_created = True
                 st.session_state.game.load_scenes()
-                st.experimental_rerun()
+                st.rerun()
             else:
                 st.error("Por favor, introduce un nombre para tu personaje.")
 
@@ -525,7 +525,7 @@ def game_page():
             st.session_state.game_started = True
             st.session_state.current_text = st.session_state.game.scenes[st.session_state.current_scene_id]['text']
             st.session_state.text_type = "scene"
-            st.experimental_rerun()
+            st.rerun()
 
     else:
 
