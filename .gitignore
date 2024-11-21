@@ -48,3 +48,5 @@ logs/
 # Ignorar archivos de caché
 .cache/
 .pytest_cache/
+
+!notebook/
