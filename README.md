@@ -97,4 +97,4 @@ El motor del juego analiza la similitud cosenoidal entre los vectores generados 
 
 "Dungeons & Pythons: Embedding Edition" es una versión que está lejos de ser la definitiva. Lanzo este prototipo como una demo que muestra el potencial que puede desarrollarse con más tiempo y dedicación. Hay aspectos que me gustaría mejorar en un futuro, como son los de desarrollar un sistema de combate dinámico adaptado a NLP, construir una estructura más robusta para transicionar entre escenas o generar muchas más opciones de respuesta.
 
-Si crees que puedes aportar a "Dungeons & Pythons: Embedding Edition" con una sugerencia de código o alguna idea, te animo a contactes conmigo a mi correo antonio.d.ambunan@gmail.com o conectemos directamente por linkedin [linkedin](https://www.linkedin.com/in/antoniodominguezambunan/)
+Si crees que puedes aportar a "Dungeons & Pythons: Embedding Edition" con una sugerencia de código o alguna idea, te animo a contactes conmigo antonio.d.ambunan@gmail.com o conectemos directamente por [linkedin](https://www.linkedin.com/in/antoniodominguezambunan/)
