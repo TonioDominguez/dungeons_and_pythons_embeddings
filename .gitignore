@@ -1,0 +1,50 @@
+ # Ignorar carpetas específicas
+notebooks/
+**/notebooks/
+.ipynb_checkpoints/
+__pycache__/
+.vscode/
+.idea/
+venv/
+env/
+
+# Ignorar archivos Python
+**/__init__.py
+__init__.py
+*.py[cod]
+*$py.class
+*.so
+
+# Ignorar archivos de distribución
+dist/
+build/
+*.egg-info/
+
+# Ignorar archivos de ambiente y configuración
+.env
+.venv
+*.env
+.python-version
+
+# Ignorar archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar archivos de logs
+*.log
+logs/
+
+# Ignorar archivos temporales
+*.tmp
+*.bak
+*.swp
+*~
+
+# Ignorar archivos de Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+*.ipynb
+
+# Ignorar archivos de caché
+.cache/
+.pytest_cache/
