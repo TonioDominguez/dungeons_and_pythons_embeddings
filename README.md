@@ -63,4 +63,38 @@ El motor del juego analiza la similitud cosenoidal entre los vectores generados 
 - El output de las escenas marcan el contexto narrativo que encuentra el jugador. A través de inputs de textos libres el usuario aporta información que el sistema NLP interpreta y asocia con una determinada respuesta.
 - La estructura en árbol de las respuestas organizan el accesl a las diferentes escenas y finales. Ciertas respuestas detonan el acceso a los diferentes caminos.
 
-##🏗️ README EN CONSTRUCCIÓN 🏗️
+## Juega desde la terminal
+
+1. Abre la terminal y ejecuta el comando para clonar el repositorio en local
+   
+   ```git clone https://github.com/TonioDominguez/dungeons_and_pythons_embeddings.git```
+   
+2. Navega al directorio de Dungeons and Pythons
+   
+   ```cd dungeons_and_pythons_embeddings```
+   
+3. Instala las dependencias
+   
+   ```pip install -r requirements.txt```
+   
+4. Ejecuta el juego con el siguiente comando
+   
+   ```python main.py```
+
+## Juega desde Streamlit
+
+1. También puedes ejecutar el juego en la app de Streamlit de forma local. Instálalo en la terminal si aún lo tienes
+
+   ```pip install streamlit```
+
+2. Navega al directorio (como se indica en el punto 2 del apartado anterior) y carga la siguiente línea
+
+   ```streamlit run app.py```
+
+3. O juega directamente en el deploy público de la aplicación: https://dungeonsnpythons.streamlit.app/
+
+## Apuntes finales
+
+"Dungeons & Pythons: Embedding Edition" es una versión que está lejos de ser la definitiva. Lanzo este prototipo como una demo que muestra el potencial que puede desarrollarse con más tiempo y dedicación. Hay aspectos que me gustaría mejorar en un futuro, como son los de desarrollar un sistema de combate dinámico adaptado a NLP, construir una estructura más robusta para transicionar entre escenas o generar muchas más opciones de respuesta.
+
+Si crees que puedes aportar a "Dungeons & Pythons: Embedding Edition" con una sugerencia de código o alguna idea, te animo a contactes conmigo a mi correo antonio.d.ambunan@gmail.com o conectemos directamente por linkedin [linkedin](https://www.linkedin.com/in/antoniodominguezambunan/)
