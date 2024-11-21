@@ -62,3 +62,5 @@ El motor del juego analiza la similitud cosenoidal entre los vectores generados 
 - El jugador crea su personaje. El género, raza y profesión que elija marcan las condiciones para la aparición de respuestas durante su partida.
 - El output de las escenas marcan el contexto narrativo que encuentra el jugador. A través de inputs de textos libres el usuario aporta información que el sistema NLP interpreta y asocia con una determinada respuesta.
 - La estructura en árbol de las respuestas organizan el accesl a las diferentes escenas y finales. Ciertas respuestas detonan el acceso a los diferentes caminos.
+
+##🏗️ README EN CONSTRUCCIÓN 🏗️
